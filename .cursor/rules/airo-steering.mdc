@@ -1,0 +1,7 @@
+---
+description: Auto-generated package steering from airo
+globs:
+alwaysApply: true
+---
+
+@include ../../.airo/steering.md

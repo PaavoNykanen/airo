@@ -1,0 +1,22 @@
+{
+  "tools": [
+    "cursor"
+  ],
+  "ignore": [
+    "typescript",
+    "eslint",
+    "eslint-*",
+    "prettier",
+    "jest",
+    "vitest",
+    "@types/*",
+    "tsup",
+    "tsx"
+  ],
+  "includeDevDependencies": false,
+  "ai": {
+    "provider": "anthropic",
+    "model": "claude-haiku-4-5-20251001",
+    "apiKeyEnv": "ANTHROPIC_API_KEY"
+  }
+}
