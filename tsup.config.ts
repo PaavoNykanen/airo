@@ -4,7 +4,7 @@ import { copyFileSync, mkdirSync, readdirSync } from "node:fs";
 export default defineConfig({
   entry: ["src/index.ts"],
   format: ["esm"],
-  target: "node22",
+  target: "node24",
   outDir: "dist",
   clean: true,
   dts: true,

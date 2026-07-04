@@ -26,7 +26,7 @@ On subsequent runs, airo only regenerates sections for **new packages**, **remov
 
 ## Requirements
 
-- Node.js **22+**
+- Node.js **24+**
 - JavaScript/TypeScript projects (`package.json`)
 
 ## Quickstart
@@ -186,6 +186,8 @@ git commit -m "chore: update airo steering for some-package"
 | Prompt or config changes | Run `npx @paavonykanen/airo --regenerate` |
 
 ## Development
+
+Requires Node.js 24+ (see `.nvmrc` — run `nvm use` if you use nvm).
 
 Clone the repo and run against your own project:
 

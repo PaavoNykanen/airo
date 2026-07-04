@@ -144,7 +144,7 @@ describe("getProjectDependencies", () => {
         dependencies: {
           react: "^19.0.0",
           typescript: "^5.0.0",
-          "@types/node": "^22.0.0",
+          "@types/node": "^24.0.0",
         },
         devDependencies: {
           vitest: "^3.0.0",
