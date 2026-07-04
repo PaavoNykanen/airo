@@ -3,12 +3,19 @@
   "version": "0.1.1",
   "description": "Generate AI coding assistant steering files based on installed npm packages",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaavoNykanen/airo.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "engines": {
     "node": ">=22.0.0"
   },
   "bin": {
-    "airo": "./dist/index.js"
+    "airo": "dist/index.js"
   },
   "files": [
     "dist"
