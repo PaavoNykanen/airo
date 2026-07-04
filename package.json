@@ -25,7 +25,7 @@
     "dev": "tsx src/index.ts",
     "start": "node dist/index.js",
     "typecheck": "tsc --noEmit && tsc --noEmit -p tsconfig.test.json",
-    "test": "node --import tsx/esm --test --test-isolation=none test/**/*.test.ts"
+    "test": "node --import tsx/esm --test --experimental-test-isolation=none test/**/*.test.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.52.0",
