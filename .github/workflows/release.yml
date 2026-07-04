@@ -22,4 +22,13 @@ jobs:
       - run: npm run typecheck
       - run: npm run build
       - run: npm test
-      - run: npm publish --access public
+      - name: Publish to npm via OIDC
+        run: |
+          echo "node $(node -v), npm $(npm -v)"
+          echo "OIDC: ${ACTIONS_ID_TOKEN_REQUEST_URL:+available}"
+          unset NODE_AUTH_TOKEN
+          if [ -n "${NPM_CONFIG_USERCONFIG:-}" ] && [ -f "$NPM_CONFIG_USERCONFIG" ]; then
+            grep -v '_authToken' "$NPM_CONFIG_USERCONFIG" > "${NPM_CONFIG_USERCONFIG}.clean" || true
+            mv "${NPM_CONFIG_USERCONFIG}.clean" "$NPM_CONFIG_USERCONFIG"
+          fi
+          npm publish --access public --loglevel verbose
