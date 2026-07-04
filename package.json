@@ -1,6 +1,6 @@
 {
   "name": "@paavonykanen/airo",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "description": "Generate AI coding assistant steering files based on installed npm packages",
   "license": "MIT",
   "repository": {
